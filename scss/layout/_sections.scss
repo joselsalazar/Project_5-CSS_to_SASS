@@ -1,13 +1,13 @@
 .primary {
 	padding-top: 5%;
 
-	@media #{$brk-wide} {
+	@include desktop {
 		background-color: #fff;
 	}
 }
 
 .sections {
-	@media #{$brk-narrow} {
+	@include tablet {
 		width: 50%;
 		height: 450px;
 		float: left;
@@ -15,7 +15,7 @@
 	    clear: right;
 	}
 
-	@media #{$brk-wide} {
+	@include desktop {
 		width: 33.333333333%;
 		height: 500px;
 		float: left;
@@ -24,7 +24,7 @@
 }
 
 .container {
-	@media #{$brk-wide} {
+	@include desktop {
 		width: 90%;
 		margin: 0 auto;
 	}

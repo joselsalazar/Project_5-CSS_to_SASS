@@ -1,2 +1,10 @@
-$brk-narrow  : '(min-width: 769px)';
-$brk-wide    : '(min-width: 1025px)';
+/* Colors */
+$main-bg     : #FAFAFA;
+
+/* Fonts */
+$font-95er           : .95em;
+$default-font-family : 'Varela Round', sans-serif;
+
+/* Media Queries */
+$brk-narrow  : 769px;
+$brk-wide    : 1025px;

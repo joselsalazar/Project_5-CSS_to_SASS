@@ -3,22 +3,22 @@
 }
 
 .main-footer {
-	background-color: #FAFAFA;
+	background-color: #{$main-bg};
 	padding: 19% 0;
 
-	@media #{$brk-narrow}{
+	@include tablet {
 		padding: 4% 0;
 	}
 
 	hr {
-		@media #{$brk-narrow}{
+		@include tablet {
 			width: 85%;
 		}		
 	}
 }
 
 .footer-text {
-	@media #{$brk-narrow}{
+	@include tablet {
 		font-size: 1.2em;
 		padding: 0 15%;	
 	}
@@ -27,14 +27,14 @@
 .foot-nav {
 	display: none;
 
-	@media #{$brk-narrow} {
+	@include tablet {
 		display: inline-block;
     	float: right;
     	margin-right: 7.5%;
 	}
 
 	li {
-		@media #{$brk-narrow} {
+		@include tablet {
 			float: left;
 			padding: 0 10px;	
 		}
@@ -56,7 +56,7 @@
 	float: right;
 	margin-right: 7.5%;
 
-	@media #{$brk-narrow} {
+	@include tablet {
 		display: none;
 	}
 }

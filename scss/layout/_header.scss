@@ -1,7 +1,7 @@
 .profile-pic {
 	width: 100%;
 
-	@media #{$brk-narrow} {
+	@include tablet {
 		float: right;
 		width: 30%;
 		padding-bottom: 5%;
@@ -9,8 +9,8 @@
 }
 
 .main-header {
-	@media #{$brk-narrow} {
-		background-color: #FAFAFA;
+	@include tablet {
+		background-color: #{$main-bg};
 		padding-top: 1%;
 	}
 }
@@ -19,19 +19,19 @@
 	margin-top: 5px;
 	font-weight: bold;
 
-	@media #{$brk-narrow} {
+	@include tablet {
 		width: 303px;
 		margin: 0 auto;
 	}
 
-	@media #{$brk-wide} {
+	@include desktop {
 		float: right;
 		padding-right: 5%;
 		width: auto;
 	}
 
 	li {
-		@media #{$brk-narrow} {
+		@include tablet {
 			float: left;
 			display: inline-block;
 		}
@@ -40,12 +40,12 @@
 
 .main-nav a {
 	display: block;
-	text-align: center;
+	@extend %center;
 	padding: 10px 15px;
 }
 
 .main-nav a {
-	font-size: .95em;
+	font-size: #{$font-95er};
 	text-transform: uppercase;
 }
 
@@ -54,14 +54,14 @@
 }
 
 .head-info {
-	@media #{$brk-narrow} {
+	@include tablet {
 		padding: 5%;
 		margin-bottom: 5%;	
 	}
 }
 
 .head-snippet {
-	@media #{$brk-narrow} {
+	@include tablet {
 		float: left;
 		width: 70%;
 		text-align: left;
@@ -69,7 +69,7 @@
 		padding-bottom: 5%;
 	}
 
-	@media #{$brk-wide} {
+	@include desktop {
 		font-size: 1.1em;
 	}
 }
@@ -77,7 +77,7 @@
 .name {
 	font-weight: bold;
 
-	@media #{$brk-wide} {
+	@include desktop {
 		float: left;
 		padding-left: 5%;
 	}

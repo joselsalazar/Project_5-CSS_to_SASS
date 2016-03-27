@@ -3,19 +3,18 @@
 }
 
 body {
-	font-family: 'Varela Round', sans-serif;
-	line-height: 1.6;
-	color: #3a3a3a;
+	font-family: #{$default-font-family};
+	@include text(1em, 1.6, #3a3a3a);
 
-	@media #{$brk-wide} {
-		background: #FAFAFA;	
+	@include desktop {
+		background: #{$main-bg};	
 	}
 }
 
 p {
-	font-size: .95em;
+	font-size: #{$font-95er};
 	margin-bottom: 1.8em;
-	text-align: center;
+	@extend %center;
 }
 
 h1,
@@ -23,7 +22,7 @@ h2,
 h3,
 a {
 	color: #093a58;
-	text-align: center;
+	@extend %center;
 }
 
 a {

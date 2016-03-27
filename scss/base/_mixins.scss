@@ -1,0 +1,25 @@
+/*=========================
+	Media Queries
+=========================*/
+
+@mixin tablet {
+	@media (min-width: #{$brk-narrow}) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (min-width: #{$brk-wide}) {
+		@content;
+	}
+} 
+
+/*=======================
+	Fonts
+=======================*/
+
+@mixin text($size, $l-height, $color) {
+  font-size: $size;
+  line-height: $l-height;
+  color: $color;
+}
