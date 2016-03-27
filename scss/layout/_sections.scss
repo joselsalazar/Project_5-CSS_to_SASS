@@ -1,0 +1,31 @@
+.primary {
+	padding-top: 5%;
+
+	@media #{$brk-wide} {
+		background-color: #fff;
+	}
+}
+
+.sections {
+	@media #{$brk-narrow} {
+		width: 50%;
+		height: 450px;
+		float: left;
+	    padding: 2%;
+	    clear: right;
+	}
+
+	@media #{$brk-wide} {
+		width: 33.333333333%;
+		height: 500px;
+		float: left;
+	    padding: 2%;
+	}
+}
+
+.container {
+	@media #{$brk-wide} {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
